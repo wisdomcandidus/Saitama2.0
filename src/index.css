@@ -1,0 +1,302 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "orbitron";
+}
+
+
+/* styling for navigation bar */
+header{
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background: #090F18;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+}
+
+header nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link a img{
+  width: 50px;
+  height: 50px;
+}
+
+header .nav-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav-content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+header .nav-content ul li{
+  list-style: none;
+  padding: 0 0.5rem;
+}
+
+header .nav-content ul li a{
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+
+header .nav-content ul li a:hover{
+  font-size: 16px;
+  font-weight: 700;
+  color: #00BD01;
+}
+
+.btn{
+  margin-left: 4rem;
+}
+
+.btn a{
+  padding: 0.6rem 1rem;
+  background: linear-gradient(180deg,#00BD01,#12FF0E);
+  font-size: 14px;
+  font-weight: 900;
+  border-radius: 5px;
+  color: #090F18;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn a:hover{
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  background: linear-gradient(180deg,#029102,#06ce02);
+}
+
+/* styling for main section */
+
+main{
+  position: relative;
+  top: 8vh;
+  height: 100vh;
+  background:url('./component/img/saaitmabg.png')center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  padding: 0 120px; 
+}
+
+main .main .left-content{
+  position: relative;
+  top: -40px;
+}
+
+main .left-content p{
+  color: white;
+  width: 70%;
+  line-height: 24px;
+}
+
+main .left-content h1{
+  font-size: 64px;
+  background: linear-gradient(#00BD01,#12FF0E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+main .left-content  .btn-container{
+  margin-top: 2rem;
+}
+
+main .left-content  .btn-container .primary-btn{
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  background: linear-gradient(180deg,#00BD01,#12FF0E);
+}
+
+main .left-content  .btn-container .primary-btn a{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #090F18;
+  font-weight: bolder;    
+}
+
+
+.btn-container{
+  display: flex;
+ align-items: center;
+}
+
+
+main .left-content .btn-container .primary-btn a  .discord img{
+  width: 30px;
+  height: 24px;
+  
+}
+main .left-content .btn-container .primary-btn  .twitter img{
+  width: 30px;
+  height: 24px;
+  
+}
+
+main .right-content img{
+  
+  width: 100%;
+  height: 100%;
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+/* section page */
+
+.pri-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 120px;
+  background: #090F18;
+  
+}
+
+.pri-section h2{
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 48px;
+  background: linear-gradient(#00BD01,#12FF0E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.pri-section .sec-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pri-section .sec-image img{
+  width: 460px;
+  height: 460px;
+}
+
+.pri-section .sec-container{
+  width: 55%;
+}
+
+.pri-section .sec-container .community,.pri-section .sec-container .Roadmap{
+  margin-bottom: 3rem;
+}
+
+.pri-section .sec-container .community h3,.pri-section .sec-container .Roadmap h3{
+  font-size: 32px;
+ color: #00BD01;
+ margin-bottom: 1rem;
+}
+
+.pri-section .sec-container .community p,.pri-section .sec-container .Roadmap p{
+  color: white;
+  line-height: 24px;
+}
+
+
+/* for address */
+
+.address{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg,#31DA89,#003C74);
+
+}
+
+.address .add img{
+  height: 32px;
+}
+
+.address .add a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address .add h3{
+  padding: 0 0.3rem;
+  background: linear-gradient(#00BD01,#12FF0E);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+footer{
+  height: 20vh;
+  background: #090F18;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer p{
+  padding: 0.5rem 0;
+}
+
+/* responsiveness */
+
+@media (max-width:1000px) and (min-width: 600px)  {
+   
+  header{
+      padding: 0 64px;
+  }
+  .btn{
+      margin-left: 1rem;
+  }
+
+  /* for main */
+
+  .main{
+      padding: 0 64px; 
+  }
+
+  main .right-content img{
+    
+      width: 100%;
+      height: 100%;
+      max-width: 30rem;
+      max-height: 30rem;
+  }
+  main{
+      height: 100vh;
+      position: relative;
+      top: 4vh;
+  }
+  
+}
